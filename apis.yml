@@ -1,0 +1,7 @@
+aid: tempur-sealy-international
+url: https://raw.githubusercontent.com/api-evangelist/tempur-sealy-international/refs/heads/main/apis.yml
+modified: '2026-03-24'
+apis: []
+common:
+  - type: Website
+    url: https://www.tempur-sealy-international.com
