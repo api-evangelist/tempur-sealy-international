@@ -1,0 +1,92 @@
+{
+  "name": "Tempur Sealy International Product",
+  "description": "Structure documentation for Tempur Sealy International bedding products across all brands",
+  "fields": [
+    {
+      "name": "productId",
+      "type": "string",
+      "required": true,
+      "description": "Unique product SKU",
+      "example": "TP-PROADAPT-QUEEN-MED"
+    },
+    {
+      "name": "brand",
+      "type": "string",
+      "required": true,
+      "description": "Product brand",
+      "enum": ["Tempur-Pedic", "Sealy", "Stearns & Foster", "Cocoon by Sealy"],
+      "example": "Tempur-Pedic"
+    },
+    {
+      "name": "productName",
+      "type": "string",
+      "required": true,
+      "description": "Full product name",
+      "example": "TEMPUR-ProAdapt Medium"
+    },
+    {
+      "name": "category",
+      "type": "string",
+      "required": true,
+      "description": "Product category",
+      "enum": ["Mattress", "Pillow", "Foundation", "Adjustable Base", "Topper", "Protector", "Sheets", "Duvet"],
+      "example": "Mattress"
+    },
+    {
+      "name": "size",
+      "type": "string",
+      "required": false,
+      "description": "Mattress or bedding size",
+      "example": "Queen"
+    },
+    {
+      "name": "firmness",
+      "type": "string",
+      "required": false,
+      "description": "Mattress firmness level",
+      "example": "Medium"
+    },
+    {
+      "name": "price",
+      "type": "object",
+      "required": false,
+      "description": "Pricing information",
+      "fields": [
+        {"name": "msrp", "type": "number", "required": false, "description": "MSRP in USD", "example": 2799.00},
+        {"name": "salePrice", "type": "number", "required": false, "description": "Current sale price", "example": 2299.00},
+        {"name": "currency", "type": "string", "required": false, "description": "Currency code", "example": "USD"}
+      ]
+    },
+    {
+      "name": "availability",
+      "type": "string",
+      "required": false,
+      "description": "Availability status",
+      "example": "In Stock"
+    },
+    {
+      "name": "materials",
+      "type": "array",
+      "required": false,
+      "description": "Primary materials",
+      "example": ["TEMPUR Material", "Adaptive SmartClimate System"]
+    },
+    {
+      "name": "features",
+      "type": "array",
+      "required": false,
+      "description": "Key product features",
+      "example": ["Pressure Relief", "Motion Isolation", "Cooling Technology"]
+    },
+    {
+      "name": "warranty",
+      "type": "object",
+      "required": false,
+      "description": "Warranty information",
+      "fields": [
+        {"name": "years", "type": "integer", "required": false, "description": "Warranty duration in years", "example": 10},
+        {"name": "type", "type": "string", "required": false, "description": "Warranty type", "example": "Limited Warranty"}
+      ]
+    }
+  ]
+}

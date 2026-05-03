@@ -1,0 +1,117 @@
+name: Tempur Sealy International Vocabulary
+description: Domain vocabulary and taxonomy for Tempur Sealy International covering bedding products, materials, brands, sleep science, and retail operations across Tempur-Pedic, Sealy, and Stearns & Foster brands.
+version: "1.0.0"
+created: "2026-05-03"
+modified: "2026-05-03"
+
+domains:
+  - name: Brands
+    description: Tempur Sealy International's portfolio of bedding brands
+    terms:
+      - term: Tempur-Pedic
+        definition: Premium memory foam mattress brand founded in 1992, known for TEMPUR material originally developed by NASA. Flagship brand in the Tempur Sealy portfolio offering high-end pressure-relieving sleep products.
+        tags: [Brand, Premium]
+
+      - term: Sealy
+        definition: America's most recognized mattress brand, founded in 1881. Known for Posturepedic innerspring and hybrid mattress technology. Offers products across multiple price tiers.
+        tags: [Brand, Mainstream]
+
+      - term: Stearns & Foster
+        definition: Luxury mattress brand emphasizing handcrafted construction with premium materials like cashmere, silk, and precision coil innerspring systems.
+        tags: [Brand, Luxury]
+
+      - term: Cocoon by Sealy
+        definition: Direct-to-consumer online mattress brand from Sealy, offering compressed and boxed foam and hybrid mattresses with simple configuration options and free delivery.
+        tags: [Brand, Direct-to-Consumer, E-Commerce]
+
+  - name: Products
+    description: Bedding product types and categories
+    terms:
+      - term: Mattress
+        definition: The primary sleep surface product. Categories include innerspring, memory foam, hybrid, latex, and air mattresses in sizes from Twin to California King.
+        synonyms: [Bed Mattress, Sleep Surface]
+        tags: [Product]
+
+      - term: TEMPUR Material
+        definition: Proprietary viscoelastic foam material developed from NASA research. The defining material in Tempur-Pedic products, known for conforming to body shape, relieving pressure points, and minimizing motion transfer.
+        synonyms: [Memory Foam, TEMPUR Foam, Viscoelastic Foam]
+        tags: [Material, Tempur-Pedic]
+
+      - term: Posturepedic Technology
+        definition: Sealy's proprietary reinforced coil support system designed for targeted back support and durability. A defining feature of Sealy Posturepedic mattress collections.
+        tags: [Material, Technology, Sealy]
+
+      - term: Hybrid Mattress
+        definition: A mattress combining a foam or latex comfort layer with a coil innerspring support core, offering benefits of both foam pressure relief and coil bounce and airflow.
+        tags: [Product Type]
+
+      - term: Adjustable Base
+        definition: An electrically adjustable bed foundation allowing the head and foot of the mattress to be raised or lowered for personalized sleep positions. Sold under the Tempur-Pedic and Sealy brands.
+        synonyms: [Power Base, Adjustable Bed Frame]
+        tags: [Product, Foundation]
+
+  - name: Mattress Sizes
+    description: Standard North American mattress size classifications
+    terms:
+      - term: Twin
+        definition: Smallest standard mattress size (38" x 75"). Common for children's beds, bunk beds, and single sleepers.
+        tags: [Size]
+
+      - term: Queen
+        definition: Most popular mattress size in North America (60" x 80"). Suitable for couples with limited space or single sleepers who prefer more room.
+        tags: [Size]
+
+      - term: King
+        definition: Largest standard mattress size (76" x 80"). Maximum sleeping surface for couples.
+        tags: [Size]
+
+      - term: Split King
+        definition: Two Twin XL mattresses placed side-by-side equaling King dimensions. Allows each sleeper to have an individually adjustable base.
+        tags: [Size]
+
+  - name: Firmness
+    description: Mattress comfort firmness levels
+    terms:
+      - term: Soft
+        definition: Plush comfort level designed for side sleepers and those who prefer deep contouring and pressure relief.
+        tags: [Firmness]
+
+      - term: Medium
+        definition: Balanced comfort level suitable for a range of sleeping positions. The most popular firmness option.
+        tags: [Firmness]
+
+      - term: Firm
+        definition: Supportive comfort level with minimal sinkage. Recommended for stomach sleepers and those preferring a more traditional surface.
+        tags: [Firmness]
+
+  - name: Certifications
+    description: Industry quality and safety certifications for bedding products
+    terms:
+      - term: CertiPUR-US
+        definition: A US foam certification program ensuring foam is made without ozone depletes, prohibited phthalates, PBDE flame retardants, and mercury/lead/heavy metals. Low VOC emissions. Required for most Tempur Sealy foam products.
+        tags: [Certification, Safety]
+
+      - term: OEKO-TEX Standard 100
+        definition: International certification ensuring every component of a textile product has been tested for harmful substances. Applied to fabric covers and filling materials.
+        tags: [Certification, Safety]
+
+  - name: Retail And Commerce
+    description: Retail channel and commerce terminology
+    terms:
+      - term: Authorized Retailer
+        definition: A retail partner authorized by Tempur Sealy International to sell its branded products. Must meet brand standards for display, sales training, and customer service.
+        tags: [Retail]
+
+      - term: Direct-to-Consumer
+        definition: Sales model where products are sold directly to end customers without retail intermediaries. Used for the Cocoon by Sealy brand and online channels.
+        abbreviation: DTC
+        tags: [Retail, E-Commerce]
+
+      - term: White Glove Delivery
+        definition: Premium delivery service for mattresses including delivery to the bedroom, setup on a frame or base, and removal of the old mattress. Offered on Tempur-Pedic and Sealy products.
+        tags: [Delivery, Service]
+
+      - term: Sleep Trial
+        definition: Trial period during which a customer can return a newly purchased mattress for a full refund if unsatisfied. Tempur-Pedic offers a 90-night sleep trial.
+        synonyms: [Home Trial, Risk-Free Trial]
+        tags: [Commerce, Customer Service]

@@ -1,0 +1,49 @@
+{
+  "description": "Example Tempur Sealy International product record for a Tempur-Pedic ProAdapt mattress",
+  "product": {
+    "productId": "TP-PROADAPT-QUEEN-MED",
+    "brand": "Tempur-Pedic",
+    "productName": "TEMPUR-ProAdapt Medium",
+    "category": "Mattress",
+    "subcategory": "Memory Foam Mattress",
+    "size": "Queen",
+    "firmness": "Medium",
+    "price": {
+      "msrp": 2799.00,
+      "salePrice": null,
+      "currency": "USD"
+    },
+    "availability": "In Stock",
+    "materials": [
+      "TEMPUR-APR Material",
+      "TEMPUR-ES Material",
+      "Adaptive SmartClimate Dual Cover System"
+    ],
+    "features": [
+      "Pressure Relief",
+      "Motion Isolation",
+      "Cooling Technology",
+      "TEMPUR-CM+ Technology",
+      "Dual Cover System"
+    ],
+    "dimensions": {
+      "length": 80,
+      "width": 60,
+      "height": 12,
+      "weight": 120
+    },
+    "warranty": {
+      "years": 10,
+      "type": "Limited Warranty",
+      "details": "https://www.tempurpedic.com/warranty"
+    },
+    "certifications": [
+      "CertiPUR-US",
+      "OEKO-TEX Standard 100"
+    ],
+    "sleepTrial": {
+      "nights": 90,
+      "policy": "Full refund within 90 nights"
+    }
+  }
+}

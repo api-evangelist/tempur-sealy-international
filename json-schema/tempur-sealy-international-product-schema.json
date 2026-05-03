@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.com/schemas/tempur-sealy-international/product.json",
+  "title": "Tempur Sealy International Product",
+  "description": "Schema for Tempur Sealy International bedding products including mattresses, pillows, foundations, and accessories across Tempur-Pedic, Sealy, and Stearns & Foster brands",
+  "type": "object",
+  "required": ["productId", "brand", "productName", "category"],
+  "properties": {
+    "productId": {
+      "type": "string",
+      "description": "Unique product identifier (SKU)",
+      "example": "TP-PROADAPT-QUEEN-MED"
+    },
+    "brand": {
+      "type": "string",
+      "description": "Brand under which the product is sold",
+      "enum": ["Tempur-Pedic", "Sealy", "Stearns & Foster", "Cocoon by Sealy"],
+      "example": "Tempur-Pedic"
+    },
+    "productName": {
+      "type": "string",
+      "description": "Full product name",
+      "example": "TEMPUR-ProAdapt Medium"
+    },
+    "category": {
+      "type": "string",
+      "description": "Product category",
+      "enum": ["Mattress", "Pillow", "Foundation", "Adjustable Base", "Topper", "Protector", "Sheets", "Duvet"],
+      "example": "Mattress"
+    },
+    "subcategory": {
+      "type": "string",
+      "description": "Product subcategory",
+      "example": "Memory Foam Mattress"
+    },
+    "size": {
+      "type": "string",
+      "description": "Mattress/bedding size",
+      "enum": ["Twin", "Twin XL", "Full", "Queen", "King", "California King", "Split King"],
+      "example": "Queen"
+    },
+    "firmness": {
+      "type": "string",
+      "description": "Mattress firmness level",
+      "enum": ["Soft", "Medium Soft", "Medium", "Medium Firm", "Firm"],
+      "example": "Medium"
+    },
+    "price": {
+      "type": "object",
+      "description": "Product pricing",
+      "properties": {
+        "msrp": {
+          "type": "number",
+          "description": "Manufacturer suggested retail price in USD",
+          "example": 2799.00
+        },
+        "salePrice": {
+          "type": ["number", "null"],
+          "description": "Current sale price if on promotion",
+          "example": 2299.00
+        },
+        "currency": {
+          "type": "string",
+          "default": "USD",
+          "example": "USD"
+        }
+      }
+    },
+    "availability": {
+      "type": "string",
+      "description": "Product availability status",
+      "enum": ["In Stock", "Out of Stock", "Discontinued", "Pre-Order"],
+      "example": "In Stock"
+    },
+    "materials": {
+      "type": "array",
+      "description": "Primary materials used in the product",
+      "items": {"type": "string"},
+      "example": ["TEMPUR Material", "Adaptive SmartClimate System", "Soft Knit Cover"]
+    },
+    "features": {
+      "type": "array",
+      "description": "Key product features",
+      "items": {"type": "string"},
+      "example": ["Pressure Relief", "Motion Isolation", "Cooling Technology"]
+    },
+    "dimensions": {
+      "type": "object",
+      "description": "Product physical dimensions",
+      "properties": {
+        "length": {"type": "number", "description": "Length in inches"},
+        "width": {"type": "number", "description": "Width in inches"},
+        "height": {"type": "number", "description": "Height/thickness in inches"},
+        "weight": {"type": "number", "description": "Weight in pounds"}
+      }
+    },
+    "warranty": {
+      "type": "object",
+      "description": "Product warranty information",
+      "properties": {
+        "years": {"type": "integer", "example": 10},
+        "type": {"type": "string", "example": "Limited Warranty"},
+        "details": {"type": "string", "example": "https://www.tempurpedic.com/warranty"}
+      }
+    },
+    "certifications": {
+      "type": "array",
+      "description": "Quality and safety certifications",
+      "items": {"type": "string"},
+      "example": ["CertiPUR-US", "OEKO-TEX Standard 100"]
+    }
+  }
+}

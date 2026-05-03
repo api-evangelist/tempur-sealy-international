@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "gs1": "https://www.gs1.org/voc/",
+    "tsi": "https://api-evangelist.com/topics/tempur-sealy-international/",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "Product": "schema:Product",
+    "Mattress": {
+      "@id": "tsi:Mattress",
+      "@type": "schema:Product"
+    },
+    "productId": {
+      "@id": "schema:productID",
+      "@type": "schema:Text"
+    },
+    "brand": {
+      "@id": "schema:brand",
+      "@type": "schema:Brand"
+    },
+    "category": {
+      "@id": "schema:category",
+      "@type": "schema:Text"
+    },
+    "firmness": {
+      "@id": "tsi:firmness",
+      "@type": "schema:Text"
+    },
+    "size": {
+      "@id": "tsi:mattressSize",
+      "@type": "schema:Text"
+    },
+    "price": {
+      "@id": "schema:offers",
+      "@type": "schema:Offer"
+    },
+    "msrp": {
+      "@id": "schema:price",
+      "@type": "schema:Number"
+    },
+    "availability": {
+      "@id": "schema:availability",
+      "@type": "schema:ItemAvailability"
+    },
+    "materials": {
+      "@id": "schema:material",
+      "@type": "schema:Text"
+    },
+    "warranty": {
+      "@id": "schema:warranty",
+      "@type": "schema:WarrantyPromise"
+    },
+    "certifications": {
+      "@id": "tsi:certification",
+      "@type": "schema:Text"
+    },
+    "Tags": "schema:keywords",
+    "Documentation": "schema:documentation"
+  }
+}
