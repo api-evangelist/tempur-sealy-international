@@ -58,6 +58,8 @@ apis:
         url: https://www.sealy.com/retailers/
 
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/tempur-pedic
   - type: Website
     url: https://www.tempursealy.com
   - type: Investor Relations
