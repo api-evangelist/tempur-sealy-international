@@ -58,6 +58,10 @@ apis:
         url: https://www.sealy.com/retailers/
 
 common:
+  - type: VulnerabilityDisclosure
+    url: security/tempur-sealy-international-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/tempur-sealy-international-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/tempur-pedic
   - type: Website
@@ -74,6 +78,8 @@ common:
     url: json-schema/tempur-sealy-international-product-schema.json
   - type: Vocabulary
     url: vocabulary/tempur-sealy-international-vocabulary.yml
+  - type: Blog
+    url: https://somnigroup.com/newsroom/default.aspx
 
 maintainers:
   - FN: Kin Lane
