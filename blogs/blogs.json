@@ -1,0 +1,14 @@
+{
+  "repo": "tempur-sealy-international",
+  "feeds": [
+    {
+      "source": "https://somnigroup.com/newsroom/default.aspx",
+      "feed_url": "https://somnigroup.com/newsroom/default.aspx",
+      "title": "Somnigroup International Newsroom",
+      "saved": 0,
+      "error": "parse_failed"
+    }
+  ],
+  "fetched": "2026-07-11T11:43:46Z",
+  "post_count": 5
+}
