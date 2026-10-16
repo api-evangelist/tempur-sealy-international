@@ -4,12 +4,12 @@
     {
       "source": "https://somnigroup.com/newsroom/default.aspx",
       "feed_url": "https://somnigroup.com/newsroom/default.aspx",
-      "title": "Somnigroup International Newsroom",
+      "title": "",
       "saved": 0,
-      "error": "parse_failed"
+      "method": "none"
     }
   ],
-  "fetched": "2026-10-03T12:15:37Z",
+  "fetched": "2026-10-10T13:15:00Z",
   "post_count": 5,
   "feed_nature": "undetermined",
   "feed_nature_basis": null,
